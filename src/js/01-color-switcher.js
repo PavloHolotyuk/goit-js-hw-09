@@ -15,7 +15,7 @@ const colorChange = () => {
     refs.bodyEl.style.backgroundColor = getRandomHexColor();
   }, 1000);
   refs.startBt.setAttribute('disabled', '');
-  refs.startBt.removeAttribute('disabled');
+  refs.stopBt.removeAttribute('disabled');
 };
 
 const colorChangeStop = () => {

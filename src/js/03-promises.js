@@ -5,12 +5,11 @@ const formEl = document.querySelector('.form');
 //const stepEl = document.querySelector('input[name="step"]');
 //const amountEl = document.querySelector('input[name="amount"]');
 
-let { delay, step, amount } = formEl;
 formEl.addEventListener('submit', onBtnSubmit);
 
 function onBtnSubmit(event) {
   event.preventDefault();
-  //let { delay, step, amount } = event.currentTarget;
+  let { delay, step, amount } = event.currentTarget;
   delay = Number(delay.value);
   step = Number(step.value);
   amount = Number(amount.value);
